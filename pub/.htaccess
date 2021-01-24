@@ -140,7 +140,7 @@
     RewriteCond %{REQUEST_METHOD} ^TRAC[EK]
     RewriteRule .* - [L,R=405]
 
-## Rewrite media/* to get.php file for file generation
+## Rewrite media/* to get.php script for file generation
     RewriteCond %{REQUEST_URI} ^/media
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
